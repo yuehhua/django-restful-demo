@@ -22,9 +22,19 @@ Change `chdir = <this_repo>/demo` to your project directory.
 
 ## Usage
 
-Start server by `uwsgi demo/uwsgi.ini`.
+### start manually
+
+`uwsgi demo/uwsgi.ini`.
 
 It will open a http socket on 127.0.0.1:8000 and a monitoring port on 8001.
+
+### start docker
+
+```
+docker run -d -p 8000:8000 a504082002/echo-server-drf
+```
+
+### test
 
 You can try using GET method:
 

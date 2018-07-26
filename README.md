@@ -24,11 +24,11 @@ Change `chdir = <this_repo>/demo` to your project directory.
 
 Start server by `uwsgi demo/uwsgi.ini`.
 
-It will open a http socket on 127.0.0.1:8080 and a monitoring port on 8181.
+It will open a http socket on 127.0.0.1:8000 and a monitoring port on 8001.
 
 You can try using GET method:
 
 ```
-http://127.0.0.1:8080/echo/?number=123
+http://127.0.0.1:8000/echo/?number=123
 ```
 
